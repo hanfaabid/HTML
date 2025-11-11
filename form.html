@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Student form</legend>
+
+      <form>
+        <label> NAME </label><br />
+        <input type="text" placeholder="Enter your name" /><br />
+        <label>Phone num</label><br />
+        <input type="tel" placeholder="Enter your phone number" /><br />
+        <label>Email</label><br />
+        <input type="email" placeholder="enter your email" /><br />
+        <label>Date</label><br />
+        <input type="date" /><br />
+        <label>Gender</label><br />
+        <input type="radio" value="female" name="gender" />female
+        <input type="radio" value="male" name="gender" />male<br />
+        <label>Choose subject</label><br />
+        <input type="checkbox" value="english" />english
+        <input type="checkbox" value="urdu" />urdu
+        <input type="checkbox" value="Computer" />Computer<br />
+        <label>Choose department</label><br />
+        <select>
+          <option value="ICS">ICS</option>
+          <option value="medical">medical</option>
+
+          <option value="I-COM">I-COM</option>
+
+          <option value="fa">FA</option></select
+        ><br />
+        <label> Sunject according to department </label><br />
+        <select>
+          <optgroup label="ICS">
+            <option>math</option>
+            <option>computer</option>
+            <option>statistic</option>
+            <option>islamiyat</option>
+            <option>urdu</option>
+          </optgroup>
+          <optgroup label="FA">
+            <option>sst</option>
+            <option>urdu B</option>
+            <option>computer</option>
+            <option>islamiyat</option>
+            <option>urdu</option>
+          </optgroup>
+          <optgroup label="medical">
+            <option>sst</option>
+            <option>urdu B</option>
+            <option>computer</option>
+            <option>islamiyat</option>
+            <option>urdu</option>
+          </optgroup></select
+        ><br />
+        <label>search the subject</label><br />
+        <input type="text" placeholder="search....." list="course" />
+        <datalist id="course">
+          <option>php</option>
+          <option>math</option>
+          <option>urdu</option>
+          <option>computer</option>
+          <option>islamiyat</option>
+        </datalist>
+        <input type="submit" value="go" />
+        <button type="submit">save</button><br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d216173.89467191888!2d73.99980138472786!3d32.1579320898698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f2983d520eb29%3A0x6fb33af85e7a368!2sGujranwala%2C%20Pakistan!5e0!3m2!1sen!2s!4v1762256183585!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <iframe
+          src="https://reactnative.dev/docs/environment-setup"
+          width="100%"
+          height="600"
+        ></iframe>
+      </form>
+    </fieldset>
+  </body>
+</html>

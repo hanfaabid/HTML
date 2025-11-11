@@ -1,0 +1,6 @@
+th,td{
+        white-space: nowrap; /* 👈 yahan se text ek hi line me rahega */
+}
+td{
+        text-align: center;
+}

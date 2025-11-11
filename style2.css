@@ -1,0 +1,232 @@
+#pra{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+#system{
+    height: 60px;
+    background-color: aquamarine;
+    position: fixed;
+  top: 0;
+}
+a{
+    margin-right: 250px;
+    text-decoration: none;
+}
+button{
+  float: right;      /* button ko right side le aao */
+}
+.box{
+    height: 100px;
+    width: 100px;
+        display: inline-block;
+
+}
+#content{
+    height: 200px;
+text-align: center;
+}
+footer{
+        background-color: black;
+color: aliceblue;
+text-align: center;
+margin-top: 10px;
+}
+
+
+.pra{
+    background-color: aqua;
+   display: flex;
+justify-content: space-around;
+ padding: 0px;
+margin: 0px;
+}
+li{
+
+    list-style-type: none;
+    display: inline;
+}
+a{
+    background-color: aqua;
+}
+#box1{
+    height: 300px;
+    width: 300px;
+    background-color: gold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+}
+#box2{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+}
+#box10 {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-property: width, background-color,font-size;  /* no quotes */
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;           /* correct syntax */
+}
+
+#box10:hover {
+    width: 300px;
+    background-color: aqua;
+    font-size: 10px;
+}
+#box11{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    background-color: coral;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: font-size,3s,steps(5),2s;
+}
+#box11:hover{
+font-size: 25px;
+}
+#box12{
+height: 100px;
+width: 100px;
+background-color: aqua;
+  display: inline-block;
+    margin: 5px;
+    transform: rotate(45deg);
+
+
+}
+#box13{
+   height: 100px;
+width: 100px; 
+background-color: blanchedalmond;
+  display: inline-block;
+    margin: 5px;
+        transform: rotatex(30deg);
+
+
+
+}
+#box14{
+ height: 100px;
+width: 100px;   
+background-color: blue;
+  display: inline-block;
+    margin: 5px;
+    transform: rotatey(45deg);
+
+
+}
+#box15{
+  height: 100px;
+width: 100px;  
+background-color: chartreuse;
+  display: inline-block;
+  margin: 5px;
+      transform: rotatez(80deg);
+
+
+}
+#box16,#box17,#box18,#box19,#box20{
+  width: 100px;
+    height: 100px;
+background-color: chartreuse;
+display: inline-block;
+margin:30px
+}
+#box16{
+ transition:all;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+}
+#box16:hover{
+  transform: rotatex(150deg);
+background-color: crimson;
+}
+#box17{
+  transition: all;
+  transition-duration: 4s;
+  transition-timing-function: ease-in;
+}
+#box17:hover{
+  transform: scale(2,3);
+  background-color: cornflowerblue;
+}
+#box18{
+  transition-property: all;
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+}
+#box18:hover{
+    transform: translatey(-100px);
+  background-color: darkkhaki;
+}
+#box19{
+transition: all;
+transition-duration: 3s;
+transition-timing-function: ease-in-out;
+}
+#box19:hover{
+transform: translate(47px,200px);
+background-color: hotpink;
+}
+#box20{
+  transition: all;
+  transition-duration: 5s;
+  transition-timing-function: ease-in;
+}
+#box20:hover{
+background-color: blueviolet;
+transform: skew(30deg)
+;}
+#box21,#box22,#box23{
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  display: inline-block;
+}
+@keyframes ani{
+  from{
+    background-color: aqua;
+  }
+  to{
+    background-color: coral;
+  }
+}
+#box21{
+   animation-name: ani;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+}
+#box24{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  border:5px solid rosybrown;
+    border-top: 5px solid yellow;
+    animation-name: identifier;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+@keyframes identifier {
+  from{
+    transform: rotate(0deg);
+
+  }
+  to{
+transform: rotate(360deg);
+  }
+}
